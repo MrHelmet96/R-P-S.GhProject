@@ -10,12 +10,15 @@
     
     <h1>Let's play Rock-Paper-Scissors</h1>
     <h3>What is your choice?</h3>
-    <select name="game" id="r-p-s">
-        <option disabled selected value="opciones">--Select one--</option>
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
+    <select onchange="toggle(this)" name="game" id="r-p-s">
+        <option disabled selected value="opciones">-- Select one --</option>
+        <option id="rock" value="rock">Rock</option>
+        <option id="paper" value="paper">Paper</option>
+        <option id="scissors" value="scissors">Scissors</option>
     </select>
+    <input type="submit" value="Jugar">
+
+
 
     <script src="js/scripts.js"></script>
 </body>
